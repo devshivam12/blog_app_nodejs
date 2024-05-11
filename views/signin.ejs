@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <%- include('./partials/head') %>
+        <title>Document</title>
+</head>
+
+<body>
+
+    <%- include('./partials/nav') %>
+
+        <div class="container">
+            <form action="/user/signin" method="post" class="mt-5">
+                <div class="row">
+                    <div class="col">
+                        <input 
+                        name="email"
+                        type="text" class="form-control" placeholder="Email" 
+                        aria-label="email">
+                    </div>
+                    <div class="col">
+                        <input 
+                        name="password"
+                        type="text" class="form-control" placeholder="Password" 
+                        aria-label="password">
+                    </div>
+                </div>
+                <div class="col-12 mt-3 m-auto">
+                    <button type="submit" class="btn m-auto btn-primary">Sign in</button>
+                  </div>
+            </form>
+        </div>
+
+        <%- include('./partials/scripts') %>
+</body>
+
+</html>
